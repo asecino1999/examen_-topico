@@ -30,7 +30,7 @@ describe("", function () {
         it("varicadno valores ", function () {
             var punto=m.polarToC(element.polar.r,element.polar.teta);
             var x=Math.round(punto.getX(),-1);
-            var y=Math.round(punto.gety(),-1);
+            var y=Math.round(punto.getY(),-1);
             expect(x).toBe(Math.round(element.cart.x,-1));
             expect(y).toBe(Math.round(element.cart.y,-1));
         });    
